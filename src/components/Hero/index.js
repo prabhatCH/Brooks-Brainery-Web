@@ -1,19 +1,23 @@
 import React from "react";
-import { AiOutlineArrowRight } from "react-icons/ai";
-import "./style.css";
+import {
+  HeroContainer,
+  HeroHeading,
+  HeroPara,
+  RightArrow,
+} from "./HeroElement";
 
-const Hero = ({ firstH, secondH, para, bgColor }) => {
+const Hero = () => {
   return (
-    <div className="hero-container" style={{ backgroundColor: `${bgColor}` }}>
-      <div className="content">
-        <h1 className="heor-heading">{firstH}</h1>
-        <h1 className="heor-heading" id="student-heading">
-          {secondH}
-        </h1>
-        <p className="desc">{para}</p>
-      </div>
-      <AiOutlineArrowRight className="arrow-icon" />
-    </div>
+    <HeroContainer>
+      <HeroHeading>Join as a</HeroHeading>
+      <HeroHeading style={{ paddingTop: 0 }}>student</HeroHeading>
+      <HeroPara>
+        Brooks Brainery is going to provide students with a big bucket of
+        programs to choose from. A student can even opt out of the program
+        anytime, or switch programs.
+      </HeroPara>
+      <RightArrow />
+    </HeroContainer>
   );
 };
 
