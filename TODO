@@ -1,0 +1,14 @@
+Packages
+  L [] react-router-dom
+  L [] react-icons
+  L [] Styled-components
+  
+File structure
+* components
+    L [] Dropdown Menu 
+    L [] Hero
+    
+* Pages
+    L [] Home
+    L [] About
+    L [] Contact

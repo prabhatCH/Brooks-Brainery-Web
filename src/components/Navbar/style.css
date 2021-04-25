@@ -1,0 +1,11 @@
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.menu-icon {
+  margin-right: 2.5rem;
+  font-size: 2em;
+  color: #e93c24;
+}
