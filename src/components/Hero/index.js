@@ -6,16 +6,12 @@ import {
   RightArrow,
 } from "./HeroElement";
 
-const Hero = () => {
+const Hero = ({ firstH, secondH, para, bgColor }) => {
   return (
-    <HeroContainer>
-      <HeroHeading>Join as a</HeroHeading>
-      <HeroHeading style={{ paddingTop: 0 }}>student</HeroHeading>
-      <HeroPara>
-        Brooks Brainery is going to provide students with a big bucket of
-        programs to choose from. A student can even opt out of the program
-        anytime, or switch programs.
-      </HeroPara>
+    <HeroContainer style={{ background: `${bgColor}` }}>
+      <HeroHeading>{firstH}</HeroHeading>
+      <HeroHeading style={{ paddingTop: 0 }}>{secondH}</HeroHeading>
+      <HeroPara>{para}</HeroPara>
       <RightArrow />
     </HeroContainer>
   );

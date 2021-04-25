@@ -2,13 +2,11 @@ import styled from "styled-components";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 export const HeroContainer = styled.div`
-  position: absolute;
   height: 480px;
   width: 395px;
-  width: 20rem;
   margin: auto;
-  height: 28rem;
   background: red;
+  margin: 1rem 0;
 `;
 
 export const HeroHeading = styled.h1`

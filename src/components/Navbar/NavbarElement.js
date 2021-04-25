@@ -8,8 +8,8 @@ export const NavContainer = styled.div`
 
 export const MenuIcon = styled(AiOutlineMenu)`
   color: #e93c24;
-  margin-top: 1.5rem;
-  margin-right: 2rem;
+  margin-top: 67px;
+  margin-right: 91px;
   cursor: pointer;
   height: 41px;
   width: 53px;
