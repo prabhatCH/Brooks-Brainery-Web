@@ -12,6 +12,7 @@ const App = () => {
       <Navbar />
       <Switch>
         <Route path="/" exact component={Homepage} />
+        <Route path="/join" component={Joiningpage} />
         <Route path="/offer" component={Offeringpage} />
       </Switch>
     </div>
