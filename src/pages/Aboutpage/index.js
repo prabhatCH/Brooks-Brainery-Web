@@ -37,7 +37,9 @@ const Aboutpage = () => {
 
   return (
     <>
-      <AboutHeading>About us</AboutHeading>
+      <AboutHeading style={{ paddingLeft: "8%", marginBottom: "2rem" }}>
+        About us
+      </AboutHeading>
       {AboutData.map((el) => {
         return (
           <AboutComponent
