@@ -2,11 +2,12 @@ import styled from "styled-components";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 export const HeroContainer = styled.div`
+  position: relative;
   height: 480px;
   width: 395px;
   margin: auto;
   background: red;
-  margin: 1rem 0;
+  margin: 1rem 33px;
 `;
 
 export const HeroHeading = styled.h1`
@@ -23,7 +24,9 @@ export const RightArrow = styled(AiOutlineArrowRight)`
   position: absolute;
   width: 42px;
   height: 37px;
-  right: 47px;
-  bottom: 44px;
   cursor: pointer;
+  bottom: 44px;
+  right: 47px;
 `;
+
+export const Month = styled.h1``;

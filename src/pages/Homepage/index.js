@@ -1,7 +1,11 @@
 import React from "react";
 // import HomeComponent from "../../components/HomeComponent/";
 import Hero from "../../components/Hero/";
-import { HerosContainer } from "./HomeElement";
+import {
+  HerosContainer,
+  OfferHerosContainer,
+  OfferHeading,
+} from "./HomeElement";
 
 const Homepage = () => {
   const HomeData = [
@@ -28,6 +32,33 @@ const Homepage = () => {
     },
   ];
 
+  const offerData = [
+    {
+      firstH: "Summer",
+      secondH: "Program",
+      para:
+        "The Brooks Brainery Summer Program is a four-week long remote program for High Schoolers. ",
+      bgColor: "#FFD600",
+      month: "June - July",
+    },
+    {
+      firstH: "Tutoring",
+      secondH: "",
+      para:
+        "This not only personalizes a student’s learning path, but also caters their specific needs and requirements. This program is taught by handpicked tutors and available on-demand.",
+      bgColor: "#2958FF",
+      month: "",
+    },
+    {
+      firstH: "Test",
+      secondH: "Preparation",
+      para:
+        "Brooks Brainery FREE SAT/ACT Prep is a tailored small-group course for students, delivered live and online, to achieve the perfect test scores.",
+      bgColor: "#DB00FF",
+      month: "",
+    },
+  ];
+
   const mappedList = HomeData.map((el, i) => {
     return (
       <Hero
@@ -38,10 +69,29 @@ const Homepage = () => {
       />
     );
   });
+
+  const mappedOfferData = offerData.map((el, i) => {
+    return (
+      <Hero
+        firstH={el.firstH}
+        secondH={el.secondH}
+        para={el.para}
+        bgColor={el.bgColor}
+        month={el.month}
+      />
+    );
+  });
+
   return (
     <>
       {/* <HomeComponent /> */}
       <HerosContainer>{mappedList}</HerosContainer>
+      <OfferHerosContainer>
+        <OfferHeading>What we can offer to out students?</OfferHeading>
+        <HerosContainer style={{ height: "80%", width: "100%" }}>
+          {mappedOfferData}
+        </HerosContainer>
+      </OfferHerosContainer>
     </>
   );
 };

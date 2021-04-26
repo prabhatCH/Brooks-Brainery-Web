@@ -4,6 +4,7 @@ import {
   HeroHeading,
   HeroPara,
   RightArrow,
+  Month,
 } from "./HeroElement";
 
 const Hero = ({ firstH, secondH, para, bgColor }) => {
@@ -13,6 +14,7 @@ const Hero = ({ firstH, secondH, para, bgColor }) => {
       <HeroHeading style={{ paddingTop: 0 }}>{secondH}</HeroHeading>
       <HeroPara>{para}</HeroPara>
       <RightArrow />
+      <Month></Month>
     </HeroContainer>
   );
 };
