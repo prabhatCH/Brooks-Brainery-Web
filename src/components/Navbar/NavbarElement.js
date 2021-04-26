@@ -13,4 +13,7 @@ export const MenuIcon = styled(AiOutlineMenu)`
   cursor: pointer;
   height: 41px;
   width: 53px;
+  :hover {
+    color: yellow;
+  }
 `;
