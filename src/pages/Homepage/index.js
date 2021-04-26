@@ -1,5 +1,5 @@
 import React from "react";
-// import HomeComponent from "../../components/HomeComponent/";
+import HomeComponent from "../../components/HomeComponent/";
 import Hero from "../../components/Hero/";
 import {
   HerosContainer,
@@ -84,7 +84,7 @@ const Homepage = () => {
 
   return (
     <>
-      {/* <HomeComponent /> */}
+      <HomeComponent />
       <HerosContainer>{mappedList}</HerosContainer>
       <OfferHerosContainer>
         <OfferHeading>What we can offer to out students?</OfferHeading>

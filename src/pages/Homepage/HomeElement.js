@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HerosContainer = styled.div`
-  border: 2px solid grey;
+  /* border: 2px solid grey; */
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -10,7 +10,7 @@ export const HerosContainer = styled.div`
 `;
 
 export const OfferHerosContainer = styled.div`
-  border: 0.5px solid white;
+  /* border: 0.5px solid white; */
   height: 100vh;
   overflow: auto;
   display: flex;
@@ -24,5 +24,5 @@ export const OfferHeading = styled.div`
   display: flex;
   justify-content: flex-start;
   width: 79%;
-  margin: auto;
+  /* margin: auto; */
 `;

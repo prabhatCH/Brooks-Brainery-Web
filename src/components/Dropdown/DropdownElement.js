@@ -9,8 +9,8 @@ export const SidebarContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  transition: ease-in-out;
-  transition-duration: 300ms;
+  /* transition: ease-in-out; 
+  transition-duration: 1000ms; */
   z-index: 999;
 `;
 

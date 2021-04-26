@@ -10,13 +10,34 @@ const Dropdown = ({ isOpen }) => {
   return (
     <SidebarContainer style={{ transform: `translateX(${transformValue})` }}>
       <SidebarLinkContainer>
-        <SidebarLink>Home</SidebarLink>
+        <SidebarLink
+          style={{
+            transform: `translateX(${transformValue})`,
+            transition: "ease 100ms",
+          }}
+        >
+          Home
+        </SidebarLink>
       </SidebarLinkContainer>
       <SidebarLinkContainer>
-        <SidebarLink>About</SidebarLink>
+        <SidebarLink
+          style={{
+            transform: `translateX(${transformValue})`,
+            transition: "ease 200ms",
+          }}
+        >
+          About
+        </SidebarLink>
       </SidebarLinkContainer>
       <SidebarLinkContainer>
-        <SidebarLink>Contact</SidebarLink>
+        <SidebarLink
+          style={{
+            transform: `translateX(${transformValue})`,
+            transition: "ease 300ms",
+          }}
+        >
+          Contact
+        </SidebarLink>
       </SidebarLinkContainer>
     </SidebarContainer>
   );
