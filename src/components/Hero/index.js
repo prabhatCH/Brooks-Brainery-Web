@@ -1,19 +1,21 @@
 import React from "react";
-import { AiOutlineArrowRight } from "react-icons/ai";
-import "./style.css";
+import {
+  HeroContainer,
+  HeroHeading,
+  HeroPara,
+  RightArrow,
+  Month,
+} from "./HeroElement";
 
 const Hero = ({ firstH, secondH, para, bgColor }) => {
   return (
-    <div className="hero-container" style={{ backgroundColor: `${bgColor}` }}>
-      <div className="content">
-        <h1 className="heor-heading">{firstH}</h1>
-        <h1 className="heor-heading" id="student-heading">
-          {secondH}
-        </h1>
-        <p className="desc">{para}</p>
-      </div>
-      <AiOutlineArrowRight className="arrow-icon" />
-    </div>
+    <HeroContainer style={{ background: `${bgColor}` }}>
+      <HeroHeading>{firstH}</HeroHeading>
+      <HeroHeading style={{ paddingTop: 0 }}>{secondH}</HeroHeading>
+      <HeroPara>{para}</HeroPara>
+      <RightArrow />
+      <Month></Month>
+    </HeroContainer>
   );
 };
 

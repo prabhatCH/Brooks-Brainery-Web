@@ -1,21 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
+// import { Route, Switch } from "react-router";
+
+import Dropdown from "./components/Dropdown";
 import Navbar from "./components/Navbar/";
-import Homepage from "./pages/Homepage";
-import Joiningpage from "./pages/Joiningpage";
-import { Switch, Route } from "react-router-dom";
-import Offeringpage from "./pages/Offeringpage";
-// import Footer from "./components/Footer";
+
+import { GlobalStyle } from "./GlobalStyle";
+import Homepage from "./pages/Homepage/";
+import Aboutpage from "./pages/Aboutpage/";
 
 const App = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
-    <div>
-      <Navbar />
-      <Switch>
-        <Route path="/" exact component={Homepage} />
-        <Route path="/join" component={Joiningpage} />
-        <Route path="/offer" component={Offeringpage} />
-      </Switch>
-    </div>
+    <>
+      <GlobalStyle />
+      <Navbar toggle={toggle} />
+      <Dropdown isOpen={isOpen} />
+      <Homepage />
+      <Aboutpage />
+    </>
   );
 };
 

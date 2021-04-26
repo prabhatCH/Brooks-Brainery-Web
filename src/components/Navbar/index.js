@@ -1,13 +1,11 @@
 import React from "react";
-import { AiOutlineMenu } from "react-icons/ai";
+import { NavContainer, MenuIcon } from "./NavbarElement";
 
-import "./style.css";
-
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
-    <div className="nav">
-      <AiOutlineMenu className="menu-icon" />
-    </div>
+    <NavContainer>
+      <MenuIcon onClick={() => toggle()} />
+    </NavContainer>
   );
 };
 
