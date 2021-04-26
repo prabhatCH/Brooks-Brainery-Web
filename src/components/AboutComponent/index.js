@@ -10,8 +10,8 @@ import {
 
 const AboutComponent = (props) => {
   const { heading, para, order, svg } = props;
-  const cName = svg.props.className;
-  const classname = svg.props.className === undefined ? "men" : cName;
+  // const cName = svg.props.className;
+  // const classname = svg.props.className === undefined ? "men" : cName;
   return (
     <AboutContainer>
       <AboutContent style={{ order: `${order}` }}>
@@ -19,7 +19,7 @@ const AboutComponent = (props) => {
         <AboutPara>{para}</AboutPara>
       </AboutContent>
       <SvgWrapper>
-        <SvgHolder className={classname}>{svg}</SvgHolder>
+        <SvgHolder>{svg}</SvgHolder>
       </SvgWrapper>
     </AboutContainer>
   );

@@ -1,55 +1,78 @@
 import React from "react";
 import { AboutHeading } from "../../components/AboutComponent/AboutElement";
-import AboutComponent from "../../components/AboutComponent/";
+// import AboutComponent from "../../components/AboutComponent/";
+import {
+  AboutContainer,
+  Heading,
+  AboutContent,
+  AboutPara,
+  SvgHolder,
+  SvgWrapper,
+} from "../../components/AboutComponent/AboutElement";
+
 import { men, freeLabel, emoji, textPaper } from "./AboutElement";
 
 const Aboutpage = () => {
-  const AboutData = [
-    {
-      heading: "Brooks Brainery",
-      para:
-        "is a non-profit organization led by teenagers whose sole purpose is to provide opportunities free of cost to other teenagers. ",
-      svg: men,
-      order: 0,
-    },
-    {
-      heading: "Freebie",
-      para:
-        "We strive to provide a self-sufficient platform to high schoolers, by fellow high schoolers, and bring the best possible resources and services, completely free of cost.",
-      svg: freeLabel,
-      order: "2",
-    },
-    {
-      heading: "Get ready for a college!",
-      para:
-        "We are focused on creating a conducive environment for college preparation and applications. ",
-      svg: textPaper,
-      order: "0",
-    },
-    {
-      heading: "Your personal teacher friend",
-      para:
-        "We are also working towards introducing specific courses for the standardized tests, and one-on-one live tutoring to master any particular topic.",
-      svg: emoji,
-      order: "2",
-    },
-  ];
-
   return (
     <>
-      <AboutHeading style={{ paddingLeft: "8%", marginBottom: "2rem" }}>
+      <AboutHeading style={{ paddingLeft: "8%", marginBottom: "6rem" }}>
         About us
       </AboutHeading>
-      {AboutData.map((el) => {
-        return (
-          <AboutComponent
-            heading={el.heading}
-            para={el.para}
-            order={el.order}
-            svg={el.svg}
-          />
-        );
-      })}
+      <AboutContainer>
+        <AboutContent style={{ order: `o` }}>
+          <Heading>Brooks Brainery</Heading>
+          <AboutPara>
+            is a non-profit organization led by teenagers whose sole purpose is
+            to provide opportunities free of cost to other teenagers.{" "}
+          </AboutPara>
+        </AboutContent>
+        <SvgWrapper>
+          <SvgHolder>{men}</SvgHolder>
+        </SvgWrapper>
+      </AboutContainer>
+      <AboutContainer>
+        <AboutContent style={{ order: `2` }}>
+          <Heading>Freebie</Heading>
+          <AboutPara>
+            We strive to provide a self-sufficient platform to high schoolers,
+            by fellow high schoolers, and bring the best possible resources and
+            services, completely free of cost.
+          </AboutPara>
+        </AboutContent>
+        <SvgWrapper
+          id="flip"
+          style={{
+            transform: "rotate(10deg)",
+          }}
+        >
+          <SvgHolder>{freeLabel}</SvgHolder>
+        </SvgWrapper>
+      </AboutContainer>
+      <AboutContainer>
+        <AboutContent style={{ order: `0` }}>
+          <Heading>Get ready for college!</Heading>
+          <AboutPara>
+            We are focused on creating a conducive environment for college
+            preparation and applications.{" "}
+          </AboutPara>
+        </AboutContent>
+        <SvgWrapper>
+          <SvgHolder>{textPaper}</SvgHolder>
+        </SvgWrapper>
+      </AboutContainer>
+      <AboutContainer>
+        <AboutContent style={{ order: `2` }}>
+          <Heading>Your personal teacher friend</Heading>
+          <AboutPara>
+            We are also working towards introducing specific courses for the
+            standardized tests, and one-on-one live tutoring to master any
+            particular topic.
+          </AboutPara>
+        </AboutContent>
+        <SvgWrapper>
+          <SvgHolder>{emoji}</SvgHolder>
+        </SvgWrapper>
+      </AboutContainer>
     </>
   );
 };

@@ -41,13 +41,4 @@ export const AboutPara = styled.p`
 
 export const SvgWrapper = styled.span``;
 
-export const SvgHolder = styled(SvgWrapper)`
-  .freeLabel {
-    transform: rotate(0deg);
-    :hover {
-      transform: rotate(0deg);
-      transition: ease;
-      transition-duration: 200ms;
-    }
-  }
-`;
+export const SvgHolder = styled.span``;
