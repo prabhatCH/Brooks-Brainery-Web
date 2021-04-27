@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 // import { Route, Switch } from "react-router";
+import FaqPage from "./pages/FaqPage/";
 
 import Dropdown from "./components/Dropdown";
 import Navbar from "./components/Navbar/";
@@ -21,6 +22,7 @@ const App = () => {
       <Dropdown isOpen={isOpen} />
       <Homepage />
       <Aboutpage />
+      <FaqPage />
     </>
   );
 };

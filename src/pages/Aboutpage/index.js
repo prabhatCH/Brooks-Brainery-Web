@@ -1,6 +1,6 @@
 import React from "react";
 import { AboutHeading } from "../../components/AboutComponent/AboutElement";
-import AboutComponent from "../../components/AboutComponent/";
+// import AboutComponent from "../../components/AboutComponent/";
 import {
   AboutContainer,
   Heading,
