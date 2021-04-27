@@ -1,4 +1,5 @@
 import styled from "styled-components";
+// import { Link } from "react-router-dom";
 
 export const FormContainer = styled.form`
   display: flex;
@@ -6,9 +7,10 @@ export const FormContainer = styled.form`
   justify-content: space-evenly;
   align-items: center;
   width: 85%;
-  height: 506px;
+  height: 655px;
   margin: auto;
   border: 2px solid white;
+  margin-top: 275px;
 `;
 
 export const Heading = styled.div`
@@ -67,4 +69,36 @@ export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
   width: 85%;
+`;
+
+// About components
+export const IconWrapper = styled.div`
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: flex-end;
+  width: 85%;
+`;
+
+export const IconHolder = styled.div`
+  /* border: 1px solid yellow; */
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 149px;
+`;
+
+export const LinkIcon = styled.a`
+  display: felx;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  /* border: 2px solid white; */
+  border-radius: 50px;
+  width: 42px;
+  height: 42px;
+  :hover {
+    background-color: #3e3e3e;
+  }
 `;

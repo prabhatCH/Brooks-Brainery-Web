@@ -8,6 +8,8 @@ import Navbar from "./components/Navbar/";
 import { GlobalStyle } from "./GlobalStyle";
 import Homepage from "./pages/Homepage/";
 import Aboutpage from "./pages/Aboutpage/";
+import Form from "./components/FormComponent.js";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,6 +25,8 @@ const App = () => {
       <Homepage />
       <Aboutpage />
       <FaqPage />
+      {/* <Form /> */}
+      <Footer />
     </>
   );
 };
