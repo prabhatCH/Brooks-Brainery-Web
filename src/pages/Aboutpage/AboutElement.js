@@ -1,5 +1,6 @@
+import { MenStack } from "../../components/AboutComponent/AboutElement";
 export const men = (
-  <span style={{ whiteSpace: "nowrap" }}>
+  <MenStack style={{ whiteSpace: "nowrap" }}>
     <svg
       className="men-one"
       width="62"
@@ -222,11 +223,12 @@ export const men = (
         fill="#FFD600"
       />
     </svg>
-  </span>
+  </MenStack>
 );
 
 export const freeLabel = (
   <svg
+    style={{ transform: "rotate(10deg)" }}
     className="freeLable Rotation"
     width="475"
     height="372"

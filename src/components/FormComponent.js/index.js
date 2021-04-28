@@ -83,13 +83,13 @@ const Form = () => {
       </FormContainer>
       <IconWrapper>
         <IconHolder>
-          <LinkIcon href="https://duckduckgo.com/">
+          <LinkIcon href="https://www.instagram.com/brooksbrainery/">
             <AiOutlineInstagram style={{ height: "30px", width: "22px" }} />
           </LinkIcon>
-          <LinkIcon href="https://duckduckgo.com/">
+          <LinkIcon href="https://m.facebook.com/BrooksBrainery/">
             <FiFacebook style={{ height: "30px", width: "22px" }} />
           </LinkIcon>
-          <LinkIcon href="https://duckduckgo.com/">
+          <LinkIcon href="https://www.linkedin.com/company/brooks-brainery/">
             <FaLinkedinIn style={{ height: "30px", width: "22px" }} />
           </LinkIcon>
         </IconHolder>

@@ -41,10 +41,13 @@ const Aboutpage = () => {
           </AboutPara>
         </AboutContent>
         <SvgWrapper
-          id="flip"
-          style={{
-            transform: "rotate(10deg)",
-          }}
+          style={
+            {
+              // transform: "rotate(10deg)",
+              // border: "1px solid white",
+            }
+          }
+          flip
         >
           <SvgHolder>{freeLabel}</SvgHolder>
         </SvgWrapper>
@@ -57,7 +60,7 @@ const Aboutpage = () => {
             preparation and applications.{" "}
           </AboutPara>
         </AboutContent>
-        <SvgWrapper>
+        <SvgWrapper flip>
           <SvgHolder>{textPaper}</SvgHolder>
         </SvgWrapper>
       </AboutContainer>

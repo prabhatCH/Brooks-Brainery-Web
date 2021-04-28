@@ -8,6 +8,16 @@ export const HeroContainer = styled.div`
   margin: auto;
   background: red;
   margin: 1rem 33px;
+  margin-left: 2px;
+
+  :hover {
+    transform: translate(0px, -10px);
+    transition: 300ms ease-in-out;
+    transition-property: all;
+    transition-duration: 200ms;
+    margin-left: 7px;
+    /* margin-right: 2px; */
+  }
 `;
 
 export const HeroHeading = styled.h1`

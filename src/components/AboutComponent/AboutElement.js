@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 // import { svg } from "./index";
 
 export const AboutHeading = styled.h1`
@@ -39,7 +39,18 @@ export const AboutPara = styled.p`
   padding-left: 87px;
 `;
 
-export const SvgWrapper = styled.span``;
+export const SvgWrapper = styled.span`
+  ${({ flip }) =>
+    flip
+      ? css`
+          /* transform: rotate(10deg) */
+          transition-duration: 500ms;
+          :hover {
+            transform: rotate(-10deg);
+          }
+        `
+      : ""}
+`;
 
 export const SvgHolder = styled.span``;
 
@@ -47,4 +58,35 @@ export const RollingImg = styled.div`
   height: 444px;
   display: flex;
   align-items: center;
+`;
+
+export const MenStack = styled.span`
+  white-space: nowrap;
+  .men-one {
+    transition-duration: 500ms;
+    /* transition: linear 500ms ease; */
+    /* border: 2px solid green; */
+  }
+  .men-two {
+    transition-duration: 500ms;
+
+    /* transition: linear 500ms ease; */
+
+    /* border: 2px solid green; */
+  }
+  :hover {
+    .men-one {
+      transform: translateY(-2px);
+      /* transition-duration: 500ms;
+      transition-property: all;
+      transition-timing-function: linear; */
+    }
+
+    .men-two {
+      transform: translateY(-5px);
+      /* transition: transform 0.5s ease;
+      transition-duration: 500ms;
+      transition-timing-function: linear; */
+    }
+  }
 `;
