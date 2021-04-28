@@ -1,8 +1,8 @@
 import React from "react";
-import { AboutHeading } from "../../components/AboutComponent/AboutElement";
-import Faq from "../../components/Faq";
-import Form from "../../components/FormComponent.js";
-import { faqs } from "./Element";
+import { AboutHeading } from "../components/AboutComponent/AboutElement";
+import Faq from "../components/Faq";
+import Form from "../components/FormComponent.js/index.js";
+import { faqs } from "./data/data";
 
 const FaqPage = () => {
   const mappedFaqs = faqs.map((el) => {
