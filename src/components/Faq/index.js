@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 // import { AiFillCaretDown } from "react-icons/ai";
 import { FaqContainer, FaqHeading, FaqAnswer } from "./Element";
 
 const Faq = ({ que, ans, bg }) => {
+  const [drop, setDrop] = useState(false);
+  const displayValue = drop ? "" : "none";
   return (
-    <FaqContainer style={{ backgroundColor: `${bg}` }}>
-      <FaqHeading>{que}</FaqHeading>
-      <FaqAnswer>{ans}</FaqAnswer>
+    <FaqContainer
+      style={{
+        backgroundColor: `${bg}`,
+      }}
+      onClick={() => setDrop(!drop)}
+    >
+      <FaqHeading style={{ cursor: "pointer" }}>{que}</FaqHeading>
+      <FaqAnswer style={{ display: `${displayValue}` }}>{ans}</FaqAnswer>
     </FaqContainer>
   );
 };
