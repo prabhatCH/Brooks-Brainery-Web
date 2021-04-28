@@ -42,3 +42,9 @@ export const AboutPara = styled.p`
 export const SvgWrapper = styled.span``;
 
 export const SvgHolder = styled.span``;
+
+export const RollingImg = styled.div`
+  height: 444px;
+  display: flex;
+  align-items: center;
+`;
