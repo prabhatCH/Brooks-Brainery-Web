@@ -8,6 +8,7 @@ const Faq = ({ que, ans, bg }) => {
   return (
     <FaqContainer
       style={{
+        // trasitionDuration: "500ms",
         backgroundColor: `${bg}`,
       }}
       onClick={() => setDrop(!drop)}

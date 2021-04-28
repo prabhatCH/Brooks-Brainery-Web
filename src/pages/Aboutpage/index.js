@@ -84,6 +84,7 @@ const Aboutpage = () => {
           scrollamount="10"
           id="marquee5"
           style={{
+            width: "85%",
             borderTop: "1px solid white",
             borderBottom: "1px solid white",
             paddingTop: "23px",
