@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 // import { Route, Switch } from "react-router";
-import FaqPage from "./pages/FaqPage/";
+
+import FaqPage from "./pages/Faq";
+import Homepage from "./pages/Home";
+import Aboutpage from "./pages/About";
 
 import Dropdown from "./components/Dropdown";
 import Navbar from "./components/Navbar/";
+import Footer from "./components/Footer";
 
 import { GlobalStyle } from "./GlobalStyle";
-import Homepage from "./pages/Homepage/";
-import Aboutpage from "./pages/Aboutpage/";
-import Form from "./components/FormComponent.js";
-import Footer from "./components/Footer";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);

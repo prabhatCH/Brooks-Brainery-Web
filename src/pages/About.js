@@ -1,5 +1,5 @@
 import React from "react";
-import { AboutHeading } from "../../components/AboutComponent/AboutElement";
+import { AboutHeading } from "../components/AboutComponent/AboutElement";
 // import AboutComponent from "../../components/AboutComponent/";
 import {
   AboutContainer,
@@ -9,9 +9,9 @@ import {
   SvgHolder,
   SvgWrapper,
   RollingImg,
-} from "../../components/AboutComponent/AboutElement";
+} from "../components/AboutComponent/AboutElement";
 
-import { men, freeLabel, emoji, textPaper } from "./AboutElement";
+import { men, freeLabel, emoji, textPaper } from "./data/Svgs";
 
 const Aboutpage = () => {
   return (

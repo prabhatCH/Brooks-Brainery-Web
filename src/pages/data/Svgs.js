@@ -1,4 +1,5 @@
 import { MenStack } from "../../components/AboutComponent/AboutElement";
+
 export const men = (
   <MenStack style={{ whiteSpace: "nowrap" }}>
     <svg
